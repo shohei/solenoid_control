@@ -1,0 +1,19 @@
+* C:\Users\shohei\Desktop\LTspice\tutorial\bjt.asc
+L1 N002 N003 55m
+D1 N001 N002 D
+V1 N004 0 PULSE(0 5 .5 .01u .01 1)
+V2 N002 0 12
+Q1 N001 P001 N005 0 MyBJT
+R2 N004 P001 5k
+R1 N003 N001 33
+R3 N005 0 10
+.model D D
+.lib \\Mac\Home\Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib \\Mac\Home\Documents\LTspiceXVII\lib\cmp\standard.bjt
+.tran 1
+.step param MyBF list 50 100 200
+.MODEL MyBJT AKO: 2N2222 (Bf=MyBF)
+.backanno
+.end
