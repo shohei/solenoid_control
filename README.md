@@ -115,6 +115,8 @@ BS170のSPICEモデルを動かすのが難しかったので、類似の2N7002�
 
 しかし、図12のシミュレーションではエミッタ電流が設計値の100mAを大きく下回ってしまった。コレクタ電流を上げるためにはベース電流を増やせばいいはずなので、ベース抵抗を下げてやる。
 
+（※hfeをパラメータとして振ってシミュレーションする方法は次のリンクを参考：[How to view and customize beta of a transistor in LTspice](https://electronics.stackexchange.com/a/330949)）
+
 ![](misc/sim9.png)
 
 図13
