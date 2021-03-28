@@ -1,0 +1,153 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+12V #PWR03
+U 1 1 6061686D
+P 6200 2750
+AR Path="/60607DD9/6061686D" Ref="#PWR03"  Part="1" 
+AR Path="/60615AFA/6061686D" Ref="#PWR?"  Part="1" 
+AR Path="/60616563/6061686D" Ref="#PWR?"  Part="1" 
+AR Path="/606051AC/6061686D" Ref="#PWR012"  Part="1" 
+F 0 "#PWR012" H 6200 2600 50  0001 C CNN
+F 1 "+12V" H 6215 2923 50  0000 C CNN
+F 2 "" H 6200 2750 50  0001 C CNN
+F 3 "" H 6200 2750 50  0001 C CNN
+	1    6200 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 60619370
+P 5750 3050
+AR Path="/60607DD9/60619370" Ref="R3"  Part="1" 
+AR Path="/60615AFA/60619370" Ref="R?"  Part="1" 
+AR Path="/60616563/60619370" Ref="R?"  Part="1" 
+AR Path="/606051AC/60619370" Ref="R10"  Part="1" 
+F 0 "R10" H 5820 3096 50  0000 L CNN
+F 1 "120??" H 5820 3005 50  0000 L CNN
+F 2 "" V 5680 3050 50  0001 C CNN
+F 3 "~" H 5750 3050 50  0001 C CNN
+	1    5750 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 60616870
+P 6200 3200
+AR Path="/60607DD9/60616870" Ref="D1"  Part="1" 
+AR Path="/60615AFA/60616870" Ref="D?"  Part="1" 
+AR Path="/60616563/60616870" Ref="D?"  Part="1" 
+AR Path="/606051AC/60616870" Ref="D4"  Part="1" 
+F 0 "D4" V 6154 3280 50  0000 L CNN
+F 1 "1N4001/4007" V 6245 3280 50  0000 L CNN
+F 2 "" H 6200 3200 50  0001 C CNN
+F 3 "~" H 6200 3200 50  0001 C CNN
+	1    6200 3200
+	0    1    1    0   
+$EndComp
+Text GLabel 5100 3850 0    50   Input ~ 0
+SIGNAL
+Wire Wire Line
+	5750 2750 6200 2750
+Wire Wire Line
+	6200 2750 6200 3050
+Connection ~ 6200 2750
+Wire Wire Line
+	6200 3350 6200 3600
+Wire Notes Line
+	6100 2900 6100 3500
+Text Notes 5200 3000 0    50   ~ 0
+Solenoid
+Wire Notes Line
+	5550 3500 5550 2900
+Wire Notes Line
+	6100 3500 5550 3500
+Connection ~ 5750 3600
+Wire Wire Line
+	6200 3600 5750 3600
+Wire Wire Line
+	5750 3500 5750 3600
+$Comp
+L power:GND #PWR02
+U 1 1 60616871
+P 5750 4250
+AR Path="/60607DD9/60616871" Ref="#PWR02"  Part="1" 
+AR Path="/60615AFA/60616871" Ref="#PWR?"  Part="1" 
+AR Path="/60616563/60616871" Ref="#PWR?"  Part="1" 
+AR Path="/606051AC/60616871" Ref="#PWR011"  Part="1" 
+F 0 "#PWR011" H 5750 4000 50  0001 C CNN
+F 1 "GND" H 5755 4077 50  0000 C CNN
+F 2 "" H 5750 4250 50  0001 C CNN
+F 3 "" H 5750 4250 50  0001 C CNN
+	1    5750 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 60619372
+P 5750 3350
+AR Path="/60607DD9/60619372" Ref="L1"  Part="1" 
+AR Path="/60615AFA/60619372" Ref="L?"  Part="1" 
+AR Path="/60616563/60619372" Ref="L?"  Part="1" 
+AR Path="/606051AC/60619372" Ref="L3"  Part="1" 
+F 0 "L3" H 5802 3396 50  0000 L CNN
+F 1 "55mH" H 5802 3305 50  0000 L CNN
+F 2 "" H 5750 3350 50  0001 C CNN
+F 3 "~" H 5750 3350 50  0001 C CNN
+	1    5750 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2750 5750 2900
+Wire Wire Line
+	5750 4050 5750 4250
+$Comp
+L Relay_SolidState:MOC3010M U1
+U 1 1 60609E25
+P 5450 3950
+F 0 "U1" H 5450 4275 50  0000 C CNN
+F 1 "MOC3010M" H 5450 4184 50  0000 C CNN
+F 2 "" H 5250 3750 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/MOC3023M-D.PDF" H 5450 3950 50  0001 L CNN
+	1    5450 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3600 5750 3850
+Wire Wire Line
+	5100 3850 5150 3850
+$Comp
+L power:GND #PWR?
+U 1 1 6060D6B1
+P 5100 4250
+AR Path="/60607DD9/6060D6B1" Ref="#PWR?"  Part="1" 
+AR Path="/60615AFA/6060D6B1" Ref="#PWR?"  Part="1" 
+AR Path="/60616563/6060D6B1" Ref="#PWR?"  Part="1" 
+AR Path="/606051AC/6060D6B1" Ref="#PWR010"  Part="1" 
+F 0 "#PWR010" H 5100 4000 50  0001 C CNN
+F 1 "GND" H 5105 4077 50  0000 C CNN
+F 2 "" H 5100 4250 50  0001 C CNN
+F 3 "" H 5100 4250 50  0001 C CNN
+	1    5100 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4250 5100 4050
+Wire Wire Line
+	5100 4050 5150 4050
+Wire Notes Line
+	5550 2900 6100 2900
+$EndSCHEMATC
