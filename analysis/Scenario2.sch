@@ -40,19 +40,6 @@ F 3 "~" H 5150 3850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R3
-U 1 1 6060A7A2
-P 5750 3050
-AR Path="/60607DD9/6060A7A2" Ref="R3"  Part="1" 
-AR Path="/60615AFA/6060A7A2" Ref="R?"  Part="1" 
-F 0 "R?" H 5820 3096 50  0000 L CNN
-F 1 "33" H 5820 3005 50  0000 L CNN
-F 2 "" V 5680 3050 50  0001 C CNN
-F 3 "~" H 5750 3050 50  0001 C CNN
-	1    5750 3050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:D D1
 U 1 1 6060B192
 P 6200 3200
@@ -89,23 +76,10 @@ Wire Wire Line
 Connection ~ 6200 2750
 Wire Wire Line
 	6200 3350 6200 3600
-Wire Notes Line
-	5550 2900 6050 2900
-Wire Notes Line
-	6050 2900 6050 3500
-Text Notes 5200 3000 0    50   ~ 0
-Solenoid
-Wire Notes Line
-	5550 3500 5550 2900
-Wire Notes Line
-	6050 3500 5550 3500
 Wire Wire Line
 	5750 3600 5750 3650
-Connection ~ 5750 3600
 Wire Wire Line
 	6200 3600 5750 3600
-Wire Wire Line
-	5750 3500 5750 3600
 Wire Wire Line
 	5400 3850 5450 3850
 Connection ~ 5400 3850
@@ -124,19 +98,6 @@ F 1 "GND" H 5755 4077 50  0000 C CNN
 F 2 "" H 5750 4250 50  0001 C CNN
 F 3 "" H 5750 4250 50  0001 C CNN
 	1    5750 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:L L1
-U 1 1 6060BDB8
-P 5750 3350
-AR Path="/60607DD9/6060BDB8" Ref="L1"  Part="1" 
-AR Path="/60615AFA/6060BDB8" Ref="L?"  Part="1" 
-F 0 "L?" H 5802 3396 50  0000 L CNN
-F 1 "55mH" H 5802 3305 50  0000 L CNN
-F 2 "" H 5750 3350 50  0001 C CNN
-F 3 "~" H 5750 3350 50  0001 C CNN
-	1    5750 3350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -166,9 +127,10 @@ F 3 "https://www.onsemi.com/pub/Collateral/BS170-D.PDF" H 5650 3850 50  0001 L C
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5750 2750 5750 2900
-Wire Wire Line
 	5750 4050 5750 4250
 Wire Wire Line
 	4900 3850 5000 3850
+Wire Wire Line
+	5750 2750 5750 3600
+Connection ~ 5750 3600
 $EndSCHEMATC
