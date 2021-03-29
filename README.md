@@ -61,6 +61,9 @@ BS170のSPICEモデルを動かすのが難しかったので、類似の2N7002�
 
 **追記：** なんとソレノイドの抵抗は120Ωだった（実際は123Ωと121.5Ω）。話がいとも簡単になる。リレーではなく、FETで動かすことにする。PWMではなく5VのON/OFF出力。
 
+**追記その２：** 電流の流れる方向を切り替えるため、FETでHブリッジを組む必要がありそう。モジュールで買ったほうが早いので、[L298](https://store.nerokas.co.ke/index.php?route=product/product&product_id=303&search=h+bridge&description=true) というのを2つ買うことにした。
+
+
 # FETからBJTへ
 上記では電圧入力（SIGNAL）をPWMで駆動することを考えていた。そもそもPWMでの入力がソレノイドの駆動に適しているのかという問題に気づく。LTspiceでのPWM(5V, duty ratio 3.15(V)/5(V)=0.63, period 20ms)のシミュレーションをしてみた。
 
