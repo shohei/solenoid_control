@@ -148,14 +148,22 @@ BS170のSPICEモデルを動かすのが難しかったので、類似の2N7002�
 
 # バルブ制御のシーケンス
 
-4/3 valveは4 ports/3 positions、すなわちとりうる状態の数が3である。
-これは以下の３状態であると予想される。　
+バルブから4端子（赤x2、黒x2）がでているため、ソレノイドバルブが有するコイルの数は2個と予想される。4/3 way valveでは4 ports/3 positions、すなわちとりうる状態の数が3である。これは以下の3状態であると予想される。　
 
 - 左側のコイルがON
 - 右側のコイルがON
 - 両方ともOFF
 ![](misc/pos123.jpg)
 
+4/3 wayのバルブ1つでConcentratorを駆動している例を探したところ、以下の文献が該当した。
+
+[Design and implementation of an oxygen concentrator with GPRS-based fault transfer system](https://www.researchgate.net/profile/Ismail_Atacak/publication/322232559_DESIGN_AND_IMPLEMENTATION_OF_AN_OXYGEN_CONCENTRATOR_WITH_GPRS-BASED_FAULT_TRANSFER_SYSTEM/links/5a4cfefba6fdcc3e99d13710/DESIGN-AND-IMPLEMENTATION-OF-AN-OXYGEN-CONCENTRATOR-WITH-GPRS-BASED-FAULT-TRANSFER-SYSTEM.pdf)
+
+![](misc/diagram.png)
+
+上記を参考に組んだ図が以下。
+
+![](misc/sequence.png)
 
 
 
