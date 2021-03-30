@@ -173,6 +173,7 @@ arduinoコードは以下
 ```
 
 ArduinoとHブリッジモジュールの配線
+
 ![](misc/wiring.png)
 
 
