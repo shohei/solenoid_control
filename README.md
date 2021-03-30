@@ -176,6 +176,11 @@ ArduinoとHブリッジモジュールの配線
 
 ![](misc/wiring.png)
 
+動作確認→動いた！
+
+![](misc/machine.jpg)
+
+
 
 
 
