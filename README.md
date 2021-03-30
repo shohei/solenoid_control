@@ -166,9 +166,13 @@ BS170のSPICEモデルを動かすのが難しかったので、類似の2N7002�
 ![](misc/sequence.png)
 
 
+arduinoコードは以下
+```
 
+```
 
-
+ArduinoとHブリッジモジュールの配線
+![](misc/wiring.png)
 
 
 
