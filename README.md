@@ -229,6 +229,14 @@ void myblink(){
   delay(100);
 }
 ```
+HブリッジモジュールL298Nの回路図
+
+![](misc/l298n.png)
+
+HブリッジモジュールL298Nのピン配置
+
+![](misc/l298n_device.png)
+
 
 ArduinoとHブリッジモジュールの配線
 
