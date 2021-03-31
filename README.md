@@ -168,7 +168,7 @@ BS170のSPICEモデルを動かすのが難しかったので、類似の2N7002�
 
 arduinoコードは以下
 
-```
+```C
 #define RED1   8
 #define BLACK1 9
 #define RED2   10
